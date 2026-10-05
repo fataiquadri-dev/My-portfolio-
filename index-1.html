@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fatai Quadri | Software developer</title>
+<meta name="description" content="Fatai Quadri builds AI apps, websites and WhatsApp bots with Python and Flask. See Cipher and PixTrim, and get in touch on WhatsApp.">
+<meta property="og:title" content="Fatai Quadri | Software developer">
+<meta property="og:description" content="AI apps, websites and WhatsApp bots, built with Python and Flask.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b4cf0'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EFQ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#f2f4f9;
+  --ink:#0f1630;
+  --muted:#4d5670;
+  --line:#d5dae6;
+  --cobalt:#3b4cf0;
+  --cobalt-dark:#2b39c4;
+  --wa:#17a34a;
+  --wa-dark:#12853c;
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --text:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--cobalt)}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+/* header */
+header{padding:20px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.mark{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+nav{display:flex;gap:16px}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.98rem}
+nav a:hover{color:var(--ink)}
+
+/* hero */
+.hero{padding:34px 0 64px}
+.hero .wrap{display:grid;gap:40px}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(2.35rem,8.2vw,4.4rem);line-height:1.02;letter-spacing:-.03em;margin:0 0 20px;max-width:12ch}
+.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 28px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background .15s,border-color .15s,color .15s}
+.btn-wa{background:var(--wa);color:#fff}
+.btn-wa:hover{background:var(--wa-dark)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-solid{background:var(--cobalt);color:#fff}
+.btn-solid:hover{background:var(--cobalt-dark)}
+.btn svg{width:20px;height:20px;fill:currentColor}
+
+.shots{display:flex;align-items:flex-start;gap:14px;justify-content:center}
+.shot{margin:0;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 0 0 1px rgba(15,22,48,.12),0 24px 48px -24px rgba(15,22,48,.45)}
+.shot img{width:100%}
+.shot-cipher{width:min(46%,260px)}
+.shot-pix{width:min(54%,290px);margin-top:56px}
+@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:no-preference){
+  .shot-cipher{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
+  .shot-pix{animation:rise .7s .14s cubic-bezier(.2,.7,.2,1) both}
+}
+
+/* sections */
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 30px}
+h3{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
+
+.project{display:grid;gap:24px;padding:0 0 48px;margin:0 0 48px;border-bottom:1px solid var(--line)}
+.project:last-of-type{border-bottom:0;margin-bottom:0;padding-bottom:0}
+.project p{margin:0 0 14px;max-width:34em;color:var(--muted)}
+.project .stack{color:var(--ink);font-weight:500;font-size:.98rem}
+.project .shot{max-width:290px}
+.status{display:inline-block;font-weight:600;font-size:.9rem;color:var(--cobalt-dark);background:#e2e6ff;border-radius:999px;padding:3px 12px;margin-bottom:12px}
+
+/* services */
+.services{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.services li{display:grid;gap:4px;padding:20px 0;border-bottom:1px solid var(--line)}
+.services li:first-child{padding-top:0}
+.services li:last-child{border-bottom:0}
+.services strong{font-family:var(--display);font-size:1.3rem;font-weight:700}
+.services span{color:var(--muted);max-width:40em}
+
+/* skills */
+.skills{display:grid;gap:18px;margin:0}
+.skills div{display:grid;gap:2px}
+.skills dt{font-weight:600}
+.skills dd{margin:0;color:var(--muted)}
+
+/* contact */
+.contact{background:var(--ink);color:#fff;border-top:0}
+.contact h2{color:#fff}
+.contact p{color:#b9c0d8;max-width:32em;margin:0 0 26px}
+.contact a{color:#fff}
+.links{display:flex;flex-wrap:wrap;gap:8px 26px;margin:30px 0 0;padding:0;list-style:none}
+.links a{font-weight:500;text-underline-offset:4px}
+.contact :focus-visible{outline-color:#fff}
+footer{background:var(--ink);color:#8d95b3;padding:0 0 32px;font-size:.92rem}
+
+@media (min-width:860px){
+  .hero{padding:56px 0 88px}
+  .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:56px}
+  .shots{justify-content:flex-end}
+  .project{grid-template-columns:1fr 1fr;align-items:center;gap:56px}
+  .project.flip .shot{order:2;justify-self:end}
+  .services li{grid-template-columns:260px 1fr;gap:32px;align-items:baseline}
+  .skills div{grid-template-columns:260px 1fr;gap:32px}
+  section{padding:80px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a class="mark" href="#top">Fatai Quadri</a>
+    <nav aria-label="Main">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>I build AI apps and websites.</h1>
+        <p class="lead">I'm a software developer working with Python and Flask. I made Cipher, an AI chat app, and PixTrim, a WhatsApp image compressor. I also build websites, chatbots and WhatsApp bots for businesses.</p>
+        <div class="actions">
+          <a class="btn btn-wa" href="https://wa.me/2348104878701?text=Hi%20Fatai%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.23 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
+            Message me on WhatsApp
+          </a>
+          <a class="btn btn-line" href="#work">See my work</a>
+        </div>
+      </div>
+      <div class="shots" aria-label="Screens from Cipher and PixTrim">
+        <figure class="shot shot-cipher"><img src="cipher.jpg" width="560" height="1026" alt="Cipher home screen with a message box and options for chat and research"></figure>
+        <figure class="shot shot-pix"><img src="pixtrim.jpg" width="640" height="676" alt="PixTrim upload screen where you drop an image to compress it"></figure>
+      </div>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Things I've built</h2>
+
+      <article class="project">
+        <figure class="shot"><img src="cipher.jpg" width="560" height="1026" alt="Cipher chat app welcome screen" loading="lazy"></figure>
+        <div>
+          <h3>Cipher</h3>
+          <p>An AI chat app. Ask questions, work through calculations, upload images and documents, or generate images. Cipher remembers useful details between conversations, and if one AI provider goes down it switches to another so replies keep coming.</p>
+          <p>It also has accounts with Google sign-in, direct messages between friends, and 16 color themes.</p>
+          <p class="stack">Python, Flask, PostgreSQL, JavaScript, Groq, Gemini</p>
+          <a class="btn btn-solid" href="https://cipher-ai-sooty.vercel.app/" target="_blank" rel="noopener">Open Cipher</a>
+        </div>
+      </article>
+
+      <article class="project flip">
+        <figure class="shot"><img src="pixtrim.jpg" width="640" height="676" alt="PixTrim upload screen" loading="lazy"></figure>
+        <div>
+          <h3>PixTrim</h3>
+          <p>A tool that compresses images for WhatsApp. Upload a photo and get a lighter version for your profile picture, status or chats, with no watermark. It runs on a coin system, and new users start with free coins.</p>
+          <p class="stack">Python, JavaScript</p>
+          <a class="btn btn-solid" href="https://pix-trim.vercel.app/" target="_blank" rel="noopener">Open PixTrim</a>
+        </div>
+      </article>
+
+      <article class="project" style="grid-template-columns:1fr">
+        <div>
+          <span class="status">In development</span>
+          <h3>ProRate</h3>
+          <p>A rating platform for professionals. People add projects with proof, such as a link to the app they built, and get a developer-style score they can share as a link so clients can check their work history.</p>
+          <p class="stack">Python, Flask, JavaScript</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>What I can build for you</h2>
+      <ul class="services">
+        <li><strong>Websites</strong><span>Business sites and landing pages that load fast and look right on a phone.</span></li>
+        <li><strong>AI chatbots</strong><span>A chatbot on your site that answers customer questions at any hour.</span></li>
+        <li><strong>WhatsApp bots</strong><span>Automatic replies and tools for the customers who already message you on WhatsApp.</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Tools I work with</h2>
+      <dl class="skills">
+        <div><dt>Languages</dt><dd>Python, JavaScript, HTML, CSS</dd></div>
+        <div><dt>Frameworks and tools</dt><dd>Flask, PostgreSQL, REST APIs, Git and GitHub, Vercel</dd></div>
+        <div><dt>AI</dt><dd>AI API integration with Groq, Gemini and OpenRouter, chatbot development</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Have a project in mind?</h2>
+      <p>Tell me what you need and I'll reply with how I'd build it. WhatsApp is the fastest way to reach me, or you can email me at fataiquadri446@gmail.com.</p>
+      <div class="actions">
+        <a class="btn btn-wa" href="https://wa.me/2348104878701?text=Hi%20Fatai%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Message me on WhatsApp</a>
+        <a class="btn btn-line" style="border-color:#fff;color:#fff" href="mailto:fataiquadri446@gmail.com?subject=Project%20inquiry">Send an email</a>
+        <button type="button" class="btn btn-line" id="copyEmail" style="border-color:#fff;color:#fff;background:transparent;cursor:pointer;font-family:inherit">Copy email address</button>
+      </div>
+      <ul class="links">
+        <li><a href="https://github.com/fataiquadri-dev" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://x.com/paradoxicalint" target="_blank" rel="noopener">X</a></li>
+        <li><a href="https://www.linkedin.com/in/fatai-quadri-969860436" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">&copy; 2026 Fatai Quadri</div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById("copyEmail"),e="fataiquadri446@gmail.com";
+  if(!b)return;
+  b.addEventListener("click",function(){
+    function done(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy email address"},2000)}
+    function fallback(){
+      var i=document.createElement("input");i.value=e;i.setAttribute("readonly","");
+      i.style.position="fixed";i.style.opacity="0";document.body.appendChild(i);i.select();
+      try{document.execCommand("copy");done()}catch(x){window.prompt("Copy this email address:",e)}
+      document.body.removeChild(i);
+    }
+    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(e).then(done,fallback)}else{fallback()}
+  });
+})();
+</script>
+</body>
+</html>
