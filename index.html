@@ -2,248 +2,320 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fatai Quadri | Software developer</title>
-<meta name="description" content="Fatai Quadri builds AI apps, websites and WhatsApp bots with Python and Flask. See Cipher and PixTrim, and get in touch on WhatsApp.">
-<meta property="og:title" content="Fatai Quadri | Software developer">
-<meta property="og:description" content="AI apps, websites and WhatsApp bots, built with Python and Flask.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233b4cf0'/%3E%3Ctext x='32' y='43' font-size='30' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EFQ%3C/text%3E%3C/svg%3E">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fatai Quadri Opeyemi | Academic Research, Data Management & Digital Solutions</title>
+<meta name="description" content="Fatai Quadri Opeyemi offers academic research support, data management, documentation and web development services.">
+<meta property="og:title" content="Fatai Quadri Opeyemi | Research, Data & Digital Solutions">
+<meta property="og:description" content="Turning information into meaningful results.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{
-  --paper:#f2f4f9;
-  --ink:#0f1630;
-  --muted:#4d5670;
-  --line:#d5dae6;
-  --cobalt:#3b4cf0;
-  --cobalt-dark:#2b39c4;
-  --wa:#17a34a;
-  --wa-dark:#12853c;
-  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
-  --text:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--text);font-size:1.0625rem;line-height:1.6}
-img{display:block;max-width:100%;height:auto}
-a{color:var(--cobalt)}
-:focus-visible{outline:3px solid var(--cobalt);outline-offset:3px;border-radius:6px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
-
-/* header */
-header{padding:20px 0}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.mark{white-space:nowrap;font-family:var(--display);font-weight:800;font-size:1.2rem;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
-nav{display:flex;gap:16px}
-nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.98rem}
-nav a:hover{color:var(--ink)}
-
-/* hero */
-.hero{padding:34px 0 64px}
-.hero .wrap{display:grid;gap:40px}
-h1{font-family:var(--display);font-weight:800;font-size:clamp(2.35rem,8.2vw,4.4rem);line-height:1.02;letter-spacing:-.03em;margin:0 0 20px;max-width:12ch}
-.lead{font-size:1.15rem;color:var(--muted);max-width:34em;margin:0 0 28px}
-.actions{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 22px;border-radius:999px;font-weight:600;font-size:1rem;text-decoration:none;border:2px solid transparent;transition:background .15s,border-color .15s,color .15s}
-.btn-wa{background:var(--wa);color:#fff}
-.btn-wa:hover{background:var(--wa-dark)}
-.btn-line{border-color:var(--ink);color:var(--ink)}
-.btn-line:hover{background:var(--ink);color:#fff}
-.btn-solid{background:var(--cobalt);color:#fff}
-.btn-solid:hover{background:var(--cobalt-dark)}
-.btn svg{width:20px;height:20px;fill:currentColor}
-
-.shots{display:flex;align-items:flex-start;gap:14px;justify-content:center}
-.shot{margin:0;border-radius:22px;overflow:hidden;background:#000;box-shadow:0 0 0 1px rgba(15,22,48,.12),0 24px 48px -24px rgba(15,22,48,.45)}
-.shot img{width:100%}
-.shot-cipher{width:min(46%,260px)}
-.shot-pix{width:min(54%,290px);margin-top:56px}
-@keyframes rise{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
-@media (prefers-reduced-motion:no-preference){
-  .shot-cipher{animation:rise .7s cubic-bezier(.2,.7,.2,1) both}
-  .shot-pix{animation:rise .7s .14s cubic-bezier(.2,.7,.2,1) both}
-}
-
-/* sections */
-section{padding:56px 0;border-top:1px solid var(--line)}
-h2{font-family:var(--display);font-weight:700;font-size:clamp(1.7rem,5vw,2.4rem);line-height:1.1;letter-spacing:-.02em;margin:0 0 30px}
-h3{font-family:var(--display);font-weight:700;font-size:1.5rem;line-height:1.15;margin:0 0 10px;letter-spacing:-.01em}
-
-.project{display:grid;gap:24px;padding:0 0 48px;margin:0 0 48px;border-bottom:1px solid var(--line)}
-.project:last-of-type{border-bottom:0;margin-bottom:0;padding-bottom:0}
-.project p{margin:0 0 14px;max-width:34em;color:var(--muted)}
-.project .stack{color:var(--ink);font-weight:500;font-size:.98rem}
-.project .shot{max-width:290px}
-.status{display:inline-block;font-weight:600;font-size:.9rem;color:var(--cobalt-dark);background:#e2e6ff;border-radius:999px;padding:3px 12px;margin-bottom:12px}
-
-/* services */
-.services{list-style:none;margin:0;padding:0;display:grid;gap:0}
-.services li{display:grid;gap:4px;padding:20px 0;border-bottom:1px solid var(--line)}
-.services li:first-child{padding-top:0}
-.services li:last-child{border-bottom:0}
-.services strong{font-family:var(--display);font-size:1.3rem;font-weight:700}
-.services span{color:var(--muted);max-width:40em}
-
-/* skills */
-.skills{display:grid;gap:18px;margin:0}
-.skills div{display:grid;gap:2px}
-.skills dt{font-weight:600}
-.skills dd{margin:0;color:var(--muted)}
-
-/* contact */
-.contact{background:var(--ink);color:#fff;border-top:0}
-.contact h2{color:#fff}
-.contact p{color:#b9c0d8;max-width:32em;margin:0 0 26px}
-.contact a{color:#fff}
-.links{display:flex;flex-wrap:wrap;gap:8px 26px;margin:30px 0 0;padding:0;list-style:none}
-.links a{font-weight:500;text-underline-offset:4px}
-.contact :focus-visible{outline-color:#fff}
-footer{background:var(--ink);color:#8d95b3;padding:0 0 32px;font-size:.92rem}
-
-@media (min-width:860px){
-  .hero{padding:56px 0 88px}
-  .hero .wrap{grid-template-columns:1.1fr .9fr;align-items:center;gap:56px}
-  .shots{justify-content:flex-end}
-  .project{grid-template-columns:1fr 1fr;align-items:center;gap:56px}
-  .project.flip .shot{order:2;justify-self:end}
-  .services li{grid-template-columns:260px 1fr;gap:32px;align-items:baseline}
-  .skills div{grid-template-columns:260px 1fr;gap:32px}
-  section{padding:80px 0}
-}
+:root{--bg:#f4f6fb;--bg2:#fff;--tx:#0a1330;--mu:#5b6482;--bd:#dde2f0;--ac:#2f6bff;--ac2:#6aa0ff;--gl:rgba(255,255,255,.7);--nv:#0a1330}
+[data-theme=dark]{--bg:#060b1f;--bg2:#0d1530;--tx:#eef2ff;--mu:#9aa5c7;--bd:#1c2749;--gl:rgba(13,21,48,.7)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6;overflow-x:hidden;transition:background .3s,color .3s}
+a{color:inherit;text-decoration:none}
+svg.i{width:1.3em;height:1.3em;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.w{max-width:1120px;margin:auto;padding:0 20px}
+section{padding:90px 0}
+.tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:12px}
+h2{font-size:clamp(1.9rem,5vw,3rem);line-height:1.12;letter-spacing:-.03em;font-weight:800;margin-bottom:14px}
+.lead{color:var(--mu);max-width:620px;margin-bottom:40px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 26px;border-radius:999px;font-weight:700;font-size:.95rem;border:1px solid transparent;cursor:pointer;font-family:inherit;transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.pri{background:var(--ac);color:#fff;box-shadow:0 10px 30px -8px var(--ac)}
+.sec{background:transparent;border-color:var(--bd);color:var(--tx)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--gl);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font-weight:800;letter-spacing:-.02em}.logo b{color:var(--ac)}
+.links{display:flex;gap:26px;align-items:center;font-size:.9rem;font-weight:600;color:var(--mu)}
+.links a:hover{color:var(--tx)}
+.ib{background:none;border:1px solid var(--bd);color:var(--tx);width:40px;height:40px;border-radius:50%;cursor:pointer;display:grid;place-items:center}
+.burger{display:none}
+@media(max-width:820px){.links{position:fixed;top:64px;left:0;right:0;background:var(--bg2);flex-direction:column;padding:24px;gap:18px;border-bottom:1px solid var(--bd);transform:translateY(-130%);transition:transform .3s}.links.open{transform:none}.burger{display:grid}}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 0 70px;position:relative;overflow:hidden}
+.orb{position:absolute;border-radius:50%;filter:blur(80px);opacity:.45;animation:fl 12s ease-in-out infinite}
+.o1{width:380px;height:380px;background:var(--ac);top:-80px;right:-60px}
+.o2{width:300px;height:300px;background:#7c5cff;bottom:-60px;left:-80px;animation-delay:-5s}
+@keyframes fl{50%{transform:translate(20px,-30px) scale(1.08)}}
+.hg{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:center;position:relative}
+@media(max-width:820px){.hg{grid-template-columns:1fr;text-align:left}.ph{order:-1;max-width:260px}}
+.name{font-size:.8rem;font-weight:700;letter-spacing:.2em;color:var(--ac);margin-bottom:14px}
+.sub{color:var(--mu);font-weight:600;margin-bottom:20px}
+h1{font-size:clamp(2.4rem,7vw,4.4rem);line-height:1.04;letter-spacing:-.04em;font-weight:800;margin-bottom:20px}
+h1 span{background:linear-gradient(90deg,var(--ac),var(--ac2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hp{color:var(--mu);max-width:520px;margin-bottom:30px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.ph{position:relative;aspect-ratio:1;border-radius:32px;background:linear-gradient(145deg,var(--ac),#7c5cff);padding:4px;box-shadow:0 30px 80px -20px var(--ac);animation:fl 9s ease-in-out infinite}
+.ph div{width:100%;height:100%;border-radius:29px;background:var(--bg2);display:grid;place-items:center;overflow:hidden;font-size:4rem;font-weight:800;color:var(--ac)}
+.ph img{width:100%;height:100%;object-fit:cover}
+.chip{position:absolute;background:var(--gl);backdrop-filter:blur(12px);border:1px solid var(--bd);border-radius:14px;padding:8px 14px;font-size:.78rem;font-weight:700;animation:fl 7s ease-in-out infinite}
+.c1{left:-22px;top:14%}.c2{right:-14px;bottom:16%;animation-delay:-3s}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:50px}
+@media(max-width:820px){.ab{grid-template-columns:1fr}}
+.big{font-size:clamp(1.3rem,3vw,1.75rem);font-weight:700;line-height:1.35;letter-spacing:-.02em}
+.big em{font-style:normal;color:var(--ac)}
+.ab p{color:var(--mu);margin-bottom:14px}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.pills span{padding:9px 16px;border:1px solid var(--bd);background:var(--bg2);border-radius:999px;font-size:.85rem;font-weight:600}
+.grp{margin:34px 0 16px;font-weight:800;font-size:1.1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:16px}
+.card{background:var(--bg2);border:1px solid var(--bd);border-radius:20px;padding:24px;transition:transform .3s,box-shadow .3s,border-color .3s}
+.card:hover{transform:translateY(-6px);border-color:var(--ac);box-shadow:0 20px 50px -20px var(--ac)}
+.ico{width:48px;height:48px;border-radius:14px;background:linear-gradient(135deg,var(--ac),#7c5cff);color:#fff;display:grid;place-items:center;margin-bottom:16px;transition:transform .3s}
+.card:hover .ico{transform:rotate(-8deg) scale(1.08)}
+.card h3{font-size:1.02rem;margin-bottom:6px}
+.card p{color:var(--mu);font-size:.88rem}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}
+.tabs button{font-family:inherit;font-weight:600;font-size:.85rem;padding:9px 16px;border-radius:999px;border:1px solid var(--bd);background:var(--bg2);color:var(--tx);cursor:pointer}
+.tabs button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.pg{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px}
+.pc{padding:0;overflow:hidden}
+.pv{height:150px;display:grid;place-items:center;color:#fff;position:relative;background-size:cover;background-position:center}
+.pv .i{width:44px;height:44px}
+.demo{position:absolute;top:12px;right:12px;background:rgba(0,0,0,.45);font-size:.68rem;font-weight:700;padding:4px 10px;border-radius:99px;letter-spacing:.06em}
+.pb{padding:20px}
+.cat{font-size:.72rem;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.1em}
+.pb h3{margin:6px 0}
+.pb a{display:inline-flex;gap:6px;margin-top:12px;font-weight:700;font-size:.88rem;color:var(--ac)}
+.ct{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px}
+@media(max-width:820px){.ct{grid-template-columns:1fr}}
+.cb{display:flex;flex-direction:column;gap:12px}
+.cb a{display:flex;align-items:center;gap:12px;padding:16px 20px;border-radius:16px;border:1px solid var(--bd);background:var(--bg2);font-weight:600;transition:.2s}
+.cb a:hover{border-color:var(--ac);transform:translateX(4px)}
+form{display:flex;flex-direction:column;gap:14px;padding:26px;background:var(--bg2);border:1px solid var(--bd);border-radius:24px}
+label{font-size:.82rem;font-weight:700;display:flex;flex-direction:column;gap:6px}
+input,select,textarea{font:inherit;padding:13px 14px;border-radius:12px;border:1px solid var(--bd);background:var(--bg);color:var(--tx);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--ac);box-shadow:0 0 0 3px rgba(47,107,255,.2)}
+textarea{min-height:120px;resize:vertical}
+#st{font-size:.85rem;font-weight:600;min-height:1.2em}
+footer{border-top:1px solid var(--bd);padding:36px 0;color:var(--mu);font-size:.88rem}
+footer .w{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+.soc{display:flex;gap:10px}
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;color:#fff;display:grid;place-items:center;box-shadow:0 10px 30px -6px #25d366;transition:transform .2s}
+.wa:hover{transform:scale(1.08)}.wa .i{width:28px;height:28px}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap">
-    <a class="mark" href="#top">Fatai Quadri</a>
-    <nav aria-label="Main">
-      <a href="#work">Work</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
+<nav><div class="w">
+<a href="#home" class="logo">FQO<b>.</b></a>
+<div class="links" id="links">
+<a href="#about">About</a><a href="#services">Services</a><a href="#work">Work</a><a href="#why">Why Me</a><a href="#contact">Contact</a>
+</div>
+<div style="display:flex;gap:8px">
+<button class="ib" id="th" aria-label="Toggle theme"></button>
+<button class="ib burger" id="bg" aria-label="Menu"></button>
+</div>
+</div></nav>
+
+<header class="hero" id="home">
+<div class="orb o1"></div><div class="orb o2"></div>
+<div class="w hg">
+<div>
+<div class="name">FATAI QUADRI OPEYEMI</div>
+<div class="sub">Academic Research | Data Management | Digital Solutions</div>
+<h1>Turning Information Into <span>Meaningful Results.</span></h1>
+<p class="hp">I help individuals, students and businesses with research, documentation, data organisation and digital support solutions.</p>
+<div class="cta"><a class="btn pri" href="#services">Explore My Services</a><a class="btn sec" href="#contact">Hire Me</a></div>
+</div>
+<div class="ph"><div id="photo"></div><span class="chip c1">Research</span><span class="chip c2">Data &amp; Tech</span></div>
+</div>
 </header>
 
-<main id="top">
-  <div class="hero">
-    <div class="wrap">
-      <div>
-        <h1>I build AI apps and websites.</h1>
-        <p class="lead">I'm a software developer working with Python and Flask. I made Cipher, an AI chat app, and PixTrim, a WhatsApp image compressor. I also build websites, chatbots and WhatsApp bots for businesses.</p>
-        <div class="actions">
-          <a class="btn btn-wa" href="https://wa.me/2348104878701?text=Hi%20Fatai%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.18-1.14l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.22-8.23 8.22Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.23-.16-.48-.29Z"/></svg>
-            Message me on WhatsApp
-          </a>
-          <a class="btn btn-line" href="#work">See my work</a>
-        </div>
-      </div>
-      <div class="shots" aria-label="Screens from Cipher and PixTrim">
-        <figure class="shot shot-cipher"><img src="cipher.jpg" width="560" height="1026" alt="Cipher home screen with a message box and options for chat and research"></figure>
-        <figure class="shot shot-pix"><img src="pixtrim.jpg" width="640" height="676" alt="PixTrim upload screen where you drop an image to compress it"></figure>
-      </div>
-    </div>
-  </div>
+<section id="about"><div class="w ab">
+<div class="rv"><span class="tag">About Me</span>
+<p class="big">I'm a Pharmacy student at <em>Obafemi Awolowo University</em> who combines research, organisation and technology to solve problems.</p>
+<div class="pills"><span>Research &amp; analysis</span><span>Attention to detail</span><span>Information organisation</span><span>Problem-solving</span><span>Continuous learning</span><span>Tech-driven productivity</span></div></div>
+<div class="rv">
+<p>I am a multidisciplinary student and digital service provider with interests spanning academic research, data management, programming, writing and technology.</p>
+<p>I provide academic research assistance, assignment support and professional document preparation, helping students and individuals organise information and communicate ideas effectively.</p>
+<p>I also offer data entry, data management, internet research and administrative support to individuals and businesses.</p>
+<p>My approach blends research, organisation, attention to detail and technology to deliver quality results.</p></div>
+</div></section>
 
-  <section id="work">
-    <div class="wrap">
-      <h2>Things I've built</h2>
+<section id="services"><div class="w">
+<span class="tag">Services</span><h2>What I can do for you</h2>
+<p class="lead">Practical, reliable support across academics, data and technology.</p>
+<div id="svc"></div>
+</div></section>
 
-      <article class="project">
-        <figure class="shot"><img src="cipher.jpg" width="560" height="1026" alt="Cipher chat app welcome screen" loading="lazy"></figure>
-        <div>
-          <h3>Cipher</h3>
-          <p>An AI chat app. Ask questions, work through calculations, upload images and documents, or generate images. Cipher remembers useful details between conversations, and if one AI provider goes down it switches to another so replies keep coming.</p>
-          <p>It also has accounts with Google sign-in, direct messages between friends, and 16 color themes.</p>
-          <p class="stack">Python, Flask, PostgreSQL, JavaScript, Groq, Gemini</p>
-          <a class="btn btn-solid" href="https://cipher-ai-sooty.vercel.app/" target="_blank" rel="noopener">Open Cipher</a>
-        </div>
-      </article>
+<section id="work"><div class="w">
+<span class="tag">My Work</span><h2>Selected projects</h2>
+<p class="lead">Projects marked <b>Demo</b> are illustrative samples, not real client work. Real projects will replace them as they are completed.</p>
+<div class="tabs" id="tabs"></div>
+<div class="pg" id="pg"></div>
+</div></section>
 
-      <article class="project flip">
-        <figure class="shot"><img src="pixtrim.jpg" width="640" height="676" alt="PixTrim upload screen" loading="lazy"></figure>
-        <div>
-          <h3>PixTrim</h3>
-          <p>A tool that compresses images for WhatsApp. Upload a photo and get a lighter version for your profile picture, status or chats, with no watermark. It runs on a coin system, and new users start with free coins.</p>
-          <p class="stack">Python, JavaScript</p>
-          <a class="btn btn-solid" href="https://pix-trim.vercel.app/" target="_blank" rel="noopener">Open PixTrim</a>
-        </div>
-      </article>
+<section id="why"><div class="w">
+<span class="tag">Why Work With Me</span><h2>How I work</h2>
+<p class="lead">The principles behind every piece of work I deliver.</p>
+<div class="grid" id="why-g"></div>
+</div></section>
 
-      <article class="project" style="grid-template-columns:1fr">
-        <div>
-          <span class="status">In development</span>
-          <h3>ProRate</h3>
-          <p>A rating platform for professionals. People add projects with proof, such as a link to the app they built, and get a developer-style score they can share as a link so clients can check their work history.</p>
-          <p class="stack">Python, Flask, JavaScript</p>
-        </div>
-      </article>
-    </div>
-  </section>
+<section id="contact"><div class="w">
+<span class="tag">Contact</span><h2>Let's work together</h2>
+<p class="lead">Tell me what you need and I'll get back to you.</p>
+<div class="ct">
+<div class="cb" id="cb"></div>
+<form id="f">
+<label>Full Name<input name="name" required></label>
+<label>Email Address<input name="email" type="email" required></label>
+<label>Service Required<select name="service" id="sel" required></select></label>
+<label>Project Description<textarea name="message" required></textarea></label>
+<button class="btn pri" type="submit">Send Message</button>
+<div id="st" role="status"></div>
+</form>
+</div></div></section>
 
-  <section id="services">
-    <div class="wrap">
-      <h2>What I can build for you</h2>
-      <ul class="services">
-        <li><strong>Websites</strong><span>Business sites and landing pages that load fast and look right on a phone.</span></li>
-        <li><strong>AI chatbots</strong><span>A chatbot on your site that answers customer questions at any hour.</span></li>
-        <li><strong>WhatsApp bots</strong><span>Automatic replies and tools for the customers who already message you on WhatsApp.</span></li>
-      </ul>
-    </div>
-  </section>
+<footer><div class="w">
+<div>&copy; <span id="yr"></span> Fatai Quadri Opeyemi. All rights reserved.</div>
+<div class="soc" id="soc"></div>
+</div></footer>
 
-  <section id="skills">
-    <div class="wrap">
-      <h2>Tools I work with</h2>
-      <dl class="skills">
-        <div><dt>Languages</dt><dd>Python, JavaScript, HTML, CSS</dd></div>
-        <div><dt>Frameworks and tools</dt><dd>Flask, PostgreSQL, REST APIs, Git and GitHub, Vercel</dd></div>
-        <div><dt>AI</dt><dd>AI API integration with Groq, Gemini and OpenRouter, chatbot development</dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <div class="wrap">
-      <h2>Have a project in mind?</h2>
-      <p>Tell me what you need and I'll reply with how I'd build it. WhatsApp is the fastest way to reach me, or you can email me at fataiquadri446@gmail.com.</p>
-      <div class="actions">
-        <a class="btn btn-wa" href="https://wa.me/2348104878701?text=Hi%20Fatai%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener">Message me on WhatsApp</a>
-        <a class="btn btn-line" style="border-color:#fff;color:#fff" href="mailto:fataiquadri446@gmail.com?subject=Project%20inquiry">Send an email</a>
-        <button type="button" class="btn btn-line" id="copyEmail" style="border-color:#fff;color:#fff;background:transparent;cursor:pointer;font-family:inherit">Copy email address</button>
-      </div>
-      <ul class="links">
-        <li><a href="https://github.com/fataiquadri-dev" target="_blank" rel="noopener">GitHub</a></li>
-        <li><a href="https://x.com/paradoxicalint" target="_blank" rel="noopener">X</a></li>
-        <li><a href="https://www.linkedin.com/in/fatai-quadri-969860436" target="_blank" rel="noopener">LinkedIn</a></li>
-      </ul>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap">&copy; 2026 Fatai Quadri</div>
-</footer>
+<a class="wa" id="wa" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"></a>
 
 <script>
-(function(){
-  var b=document.getElementById("copyEmail"),e="fataiquadri446@gmail.com";
-  if(!b)return;
-  b.addEventListener("click",function(){
-    function done(){b.textContent="Copied";setTimeout(function(){b.textContent="Copy email address"},2000)}
-    function fallback(){
-      var i=document.createElement("input");i.value=e;i.setAttribute("readonly","");
-      i.style.position="fixed";i.style.opacity="0";document.body.appendChild(i);i.select();
-      try{document.execCommand("copy");done()}catch(x){window.prompt("Copy this email address:",e)}
-      document.body.removeChild(i);
-    }
-    if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(e).then(done,fallback)}else{fallback()}
-  });
-})();
+/* ============ EDIT THIS SECTION ONLY ============ */
+const CONFIG={
+  whatsapp:"2340000000000",
+  email:"your-email@example.com",
+  linkedin:"https://www.linkedin.com/in/your-profile",
+  github:"https://github.com/fataiquadri-dev",
+  photo:"",
+  formEndpoint:""
+};
+const SERVICES=[
+ {group:"Academic Support",items:[
+  ["search","Assignment Research","Focused research support for your assignments."],
+  ["book","Project Research","Sourcing and structuring material for projects."],
+  ["globe","Internet Research","Finding credible information quickly."],
+  ["pen","Academic Writing Support","Help organising and expressing your ideas."],
+  ["layers","Literature Search","Finding and organising relevant literature."],
+  ["file","Document Formatting","Clean, consistent, professional layouts."],
+  ["check","Proofreading & Editing","Clarity, grammar and polish."],
+  ["slides","PowerPoint Presentations","Clear, well-designed slides."]]},
+ {group:"Data & Administrative",items:[
+  ["db","Data Entry","Accurate, careful data entry."],
+  ["db","Data Management","Keeping your data tidy and usable."],
+  ["layers","Data Organisation","Structuring information so it makes sense."],
+  ["table","Spreadsheet Management","Well-organised spreadsheets."],
+  ["file","Digital Documentation","Clear digital records and documents."],
+  ["briefcase","Administrative Support","Reliable remote admin help."],
+  ["folder","Information Organisation","Sorting and filing information logically."]]},
+ {group:"Technology & Creative",items:[
+  ["globe","Website Development","Modern, responsive websites."],
+  ["code","Programming","Practical code for real problems."],
+  ["pen","Professional Writing","Clear, purposeful written content."],
+  ["sparkle","Digital Content Support","Support for creating digital content."]]}
+];
+const PROJECTS=[
+ {title:"Sample Literature Review",cat:"Academic Research",desc:"Demonstration of how research is gathered and organised.",icon:"search",demo:true,link:"#contact"},
+ {title:"Sample Data Workbook",cat:"Data Management",desc:"Demonstration of a clean, structured spreadsheet.",icon:"table",demo:true,link:"#contact"},
+ {title:"Sample Formatted Report",cat:"Document Preparation",desc:"Demonstration of professional document formatting.",icon:"file",demo:true,link:"#contact"},
+ {title:"Portfolio Website",cat:"Website Development",desc:"This website, built with HTML, CSS and JavaScript.",icon:"code",link:"https://github.com/fataiquadri-dev"},
+ {title:"Sample Article",cat:"Writing and Content",desc:"Demonstration of clear, purposeful writing.",icon:"pen",demo:true,link:"#contact"}
+];
+const WHY=[
+ ["eye","Attention to Detail","Careful checking so small errors don't slip through."],
+ ["message","Reliable Communication","Clear updates and prompt replies."],
+ ["search","Research-Oriented Approach","Evidence first, assumptions second."],
+ ["folder","Organised Delivery","Neatly structured work, delivered on time."],
+ ["refresh","Adaptability","Comfortable across different subjects and tools."],
+ ["trend","Continuous Improvement","Always learning and refining how I work."]
+];
+/* ================================================= */
+
+const P={
+search:'<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/>',
+book:'<path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/>',
+pen:'<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/>',
+file:'<path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/>',
+check:'<path d="M20 6 9 17l-5-5"/>',
+slides:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/>',
+db:'<ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/>',
+table:'<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 10h18M9 4v16"/>',
+folder:'<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>',
+briefcase:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/>',
+layers:'<path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/>',
+code:'<path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/>',
+globe:'<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+sparkle:'<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/>',
+mail:'<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>',
+chat:'<path d="M21 12a9 9 0 0 1-13.4 7.8L3 21l1.3-4.4A9 9 0 1 1 21 12z"/>',
+in:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/>',
+github:'<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.9a3.4 3.4 0 0 0-.9-2.6c3.1-.3 6.4-1.5 6.4-7A5.4 5.4 0 0 0 20 4.8 5 5 0 0 0 19.9 1S18.7.7 16 2.5a13.4 13.4 0 0 0-7 0C6.3.7 5.1 1 5.1 1A5 5 0 0 0 5 4.8a5.4 5.4 0 0 0-1.5 3.8c0 5.4 3.3 6.6 6.4 7a3.4 3.4 0 0 0-.9 2.6V22"/>',
+eye:'<path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+message:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+refresh:'<path d="M21 12a9 9 0 0 0-15-6.7L3 8"/><path d="M3 3v5h5"/><path d="M3 12a9 9 0 0 0 15 6.7L21 16"/><path d="M16 16h5v5"/>',
+trend:'<path d="m3 17 6-6 4 4 8-8"/><path d="M15 7h6v6"/>',
+sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+moon:'<path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/>',
+menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',
+arrow:'<path d="M5 12h14M13 6l6 6-6 6"/>'
+};
+const ic=n=>`<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${P[n]||P.sparkle}</svg>`;
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+const root=document.documentElement;
+let theme="light";
+try{theme=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")}catch(e){}
+function setTheme(t){theme=t;root.setAttribute("data-theme",t);$("th").innerHTML=ic(t==="dark"?"sun":"moon");try{localStorage.setItem("theme",t)}catch(e){}}
+setTheme(theme);
+$("th").onclick=()=>setTheme(theme==="dark"?"light":"dark");
+$("bg").innerHTML=ic("menu");
+$("bg").onclick=()=>$("links").classList.toggle("open");
+$("links").onclick=e=>{if(e.target.tagName==="A")$("links").classList.remove("open")};
+
+$("photo").innerHTML=CONFIG.photo?`<img src="${esc(CONFIG.photo)}" alt="Fatai Quadri Opeyemi">`:"FQ";
+
+$("svc").innerHTML=SERVICES.map(g=>`<div class="grp rv">${esc(g.group)}</div><div class="grid">${g.items.map(s=>`<div class="card rv"><div class="ico">${ic(s[0])}</div><h3>${esc(s[1])}</h3><p>${esc(s[2])}</p></div>`).join("")}</div>`).join("");
+$("sel").innerHTML='<option value="">Select a service</option>'+SERVICES.map(g=>`<optgroup label="${esc(g.group)}">${g.items.map(s=>`<option>${esc(s[1])}</option>`).join("")}</optgroup>`).join("")+"<option>Other</option>";
+
+const cats=["All",...new Set(PROJECTS.map(p=>p.cat))];
+const grads=["#2f6bff,#7c5cff","#0ea5e9,#2f6bff","#6366f1,#0a1330","#2f6bff,#06b6d4","#7c5cff,#2f6bff"];
+function showP(c){
+ $("tabs").innerHTML=cats.map(x=>`<button class="${x===c?"on":""}" data-c="${esc(x)}">${esc(x)}</button>`).join("");
+ $("pg").innerHTML=PROJECTS.filter(p=>c==="All"||p.cat===c).map((p,i)=>{
+  const bg=p.image?`background-image:url('${esc(p.image)}')`:`background-image:linear-gradient(135deg,${grads[i%grads.length]})`;
+  return `<article class="card pc"><div class="pv" style="${bg}">${p.image?"":ic(p.icon)}${p.demo?'<span class="demo">DEMO</span>':""}</div><div class="pb"><div class="cat">${esc(p.cat)}</div><h3>${esc(p.title)}</h3><p>${esc(p.desc)}</p><a href="${esc(p.link||"#contact")}"${/^http/.test(p.link||"")?' target="_blank" rel="noopener"':""}>View Project ${ic("arrow")}</a></div></article>`}).join("");
+}
+$("tabs").onclick=e=>{if(e.target.dataset.c)showP(e.target.dataset.c)};
+showP("All");
+
+$("why-g").innerHTML=WHY.map(w=>`<div class="card rv"><div class="ico">${ic(w[0])}</div><h3>${esc(w[1])}</h3><p>${esc(w[2])}</p></div>`).join("");
+
+const wa=`https://wa.me/${CONFIG.whatsapp}`;
+$("cb").innerHTML=`<a href="${wa}" target="_blank" rel="noopener">${ic("chat")} WhatsApp</a><a href="mailto:${esc(CONFIG.email)}">${ic("mail")} ${esc(CONFIG.email)}</a><a href="${esc(CONFIG.linkedin)}" target="_blank" rel="noopener">${ic("in")} LinkedIn</a><a href="${esc(CONFIG.github)}" target="_blank" rel="noopener">${ic("github")} GitHub</a>`;
+$("soc").innerHTML=`<a class="ib" href="${esc(CONFIG.linkedin)}" target="_blank" rel="noopener" aria-label="LinkedIn">${ic("in")}</a><a class="ib" href="${esc(CONFIG.github)}" target="_blank" rel="noopener" aria-label="GitHub">${ic("github")}</a><a class="ib" href="${wa}" target="_blank" rel="noopener" aria-label="WhatsApp">${ic("chat")}</a>`;
+$("wa").href=wa+"?text="+encodeURIComponent("Hello Fatai, I'd like to enquire about your services.");
+$("wa").innerHTML=ic("chat");
+$("yr").textContent=new Date().getFullYear();
+
+$("f").onsubmit=async e=>{
+ e.preventDefault();
+ const d=Object.fromEntries(new FormData(e.target)),st=$("st");
+ if(CONFIG.formEndpoint){
+  st.textContent="Sending...";
+  try{
+   const r=await fetch(CONFIG.formEndpoint,{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify(d)});
+   if(!r.ok)throw 0;
+   st.textContent="Thank you! Your message has been sent.";e.target.reset();
+  }catch(_){st.textContent="Something went wrong. Please use WhatsApp or email instead."}
+ }else{
+  const body=`Name: ${d.name}\nEmail: ${d.email}\nService: ${d.service}\n\n${d.message}`;
+  location.href=`mailto:${CONFIG.email}?subject=${encodeURIComponent("Enquiry: "+d.service)}&body=${encodeURIComponent(body)}`;
+  st.textContent="Opening your email app...";
+ }
+};
+
+const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll(".rv").forEach(el=>io.observe(el));
 </script>
 </body>
 </html>
